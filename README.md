@@ -1,3 +1,4 @@
+**How to Run:**
 1. Clone the repo locally.
 2. Run the JUnit tests:
    a) ToolRentalAppTest.java 
