@@ -63,7 +63,7 @@ public class ToolRentalApp {
             System.out.println("\n Below is the Rental Agreement: ");
             agreement.printAgreement();
         } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage());
+            System.out.println("ERROR: " + e.getMessage());
         }
     }
 }
