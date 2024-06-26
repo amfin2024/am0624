@@ -53,13 +53,14 @@ public class ToolRentalApp {
             System.out.print("Enter rental day count: ");
             int rentalDays = Integer.parseInt(scanner.nextLine());
 
-            System.out.print("Enter discount percent: ");
+            System.out.print("Enter discount percent (0-100): ");
             double discount = Double.parseDouble(scanner.nextLine());
 
             System.out.print("Enter checkout date (MM/dd/yy): ");
             String checkoutDateString = scanner.nextLine();
 
             RentalAgreement agreement = generateRentalAgreement(toolCode, rentalDays, discount, checkoutDateString);
+            System.out.println("\n Below is the Rental Agreement: ");
             agreement.printAgreement();
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
